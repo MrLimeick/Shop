@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Киви",
+        "img": "Kiwi",
+        "price": 120
+    },
+    {
+        "name": "Ломтик арбуза",
+        "img": "Watermelon",
+        "price": 50
+    },
+    {
+        "name": "Стейк",
+        "img": "Steak",
+        "price": 172
+    },
+    {
+        "name": "Виноград",
+        "img": "Grape",
+        "price": 134
+    },
+    {
+        "name": "Вишня",
+        "img": "Cherry",
+        "price": 96
+    },
+    {
+        "name": "Яблоко",
+        "img": "Apple",
+        "price": 172
+    },
+    {
+        "name": "Банан",
+        "img": "Banana",
+        "price": 89
+    },
+    {
+        "name": "Авокадо",
+        "img": "Avocado",
+        "price": 200
+    },
+    {
+        "name": "Молоко",
+        "img": "Milk",
+        "price": 146
+    }
+]
