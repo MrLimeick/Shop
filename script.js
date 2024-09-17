@@ -41,7 +41,7 @@ function spawnCard(p, parent, buttonName, buttonFun) {
         <img width="160" height="160" src="assets/pictures/${p.img}.png" alt="${p.name}">
         <div id="product-name">${p.name}</div>
         <div id="product-price">${p.price} ₽</div>
-        <a href="#" class="button" onClick="${buttonFun}">${buttonName}</a>`
+        <a href="#" class="button" onClick="${buttonFun};return false">${buttonName}</a>`
     parent.appendChild(e)
     return e
 }
