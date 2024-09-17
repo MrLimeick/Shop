@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=900, initial-scale=1.0">
     <title>Магазинчик</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" async="false"></script>
 </head>
 <body>
+    <div id="cart">
+        <div class="bg" style="position: fixed;"></div>
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>Ваша корзина</h2>
+                <a class="button close-button" href="#" onclick="closeCart()">X</a>
+            </div>
+            <hr>
+            <div id="cart-list" class="list">
+            </div>
+        </div>
+    </div>
+    <nav>
+        <h3>Магазинчик</h3>
+        <a class="button cart-button" href="#" onclick="openCart()">Корзина (<span id="cartItemCount">0</span>)</a>
+    </nav>
     <header>
         <h1>Добро пожаловать в <span>Магазинчик!</span></h1>
-        <h3>Мы любим фрукты, и вам советуем!</h3>
+        <h3>Мы любим поесть, и вам советуем!</h3>
     </header>
-    <main id="product-list">
-</main>
+    <main id="product-list" class="list">
+    </main>
+    <footer>
+        <h3>Магазинчик</h3>
+    </footer>
 </body>
 </html>

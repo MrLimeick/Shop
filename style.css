@@ -1,18 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+* {
+    margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
     font-family: 'Nunito', sans-serif;
     margin: 0;
     background-color: rgb(220, 239, 254);
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     padding: 8px;
-    background-color: rgba(0, 0, 0, 0.2);
+    margin: 16px;
+    border-radius: 16px;
+
+    background-color: white;
+}
+
+nav h3 {
+    margin: 0 8px;
 }
 
 header {
@@ -20,7 +40,7 @@ header {
     padding: 100px;
 }
 
-main {
+.list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -32,10 +52,15 @@ main {
     background-color: rgba(255, 255, 255, 1);
 }
 
+main {
+    flex: 1;
+}
+
 #card {
     background-color: white;
 
     width: 160px;
+    height: fit-content;
     padding: 8px;
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -58,7 +83,7 @@ main {
     margin: 10px 0;
 }
 
-#buy-button {
+.button {
     display: block;
     text-decoration: none;
     color: white;
@@ -67,4 +92,76 @@ main {
     text-align: center;
     box-sizing: border-box;
     border-radius: 8px;
+
+    transition: all 0.2s;
+}
+
+.button:active {
+    scale: 0.95;
+}
+
+footer * {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    
+    color: white;
+    background-color: black;
+}
+
+#cart {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+}
+
+.cart-container {
+    position: absolute;
+    background-color: white;
+    padding: 16px;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    border-radius: 16px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100% - 64px);
+}
+
+hr {
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#cart-list {
+    overflow-y: scroll;
 }
